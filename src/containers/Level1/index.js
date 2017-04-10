@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Circle} from '../../components/StyledComponents';
+import {Circle, ClockHand, HalfCircle} from '../../components/StyledComponents';
 import './style.css';
 
 class Level1 extends React.Component {
@@ -25,11 +25,17 @@ class Level1 extends React.Component {
       return <li key={i} style={{transform:'translate('+obj.x+', '+obj.y+')'}}>{obj.num}</li>
     })
     return (
-      <Circle>
-        <ul className='digits'>
-          {digits}
-        </ul>
-      </Circle>
+      <div>
+        <Circle>
+          <HalfCircle deg={315} top={-0.6} left={-3.5}/>
+          <HalfCircle deg={45} top={-5.7} left={24.7} />
+          <ul className='digits'>
+            {digits}
+          </ul>
+          <ClockHand length={200} deg={20} bottom={58} hour/>
+          <ClockHand length={300} deg={0} bottom={108} />
+        </Circle>
+      </div>
     )
   }
 }

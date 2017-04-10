@@ -35,3 +35,27 @@ export const Circle = styled.div`
   height: 500px;
   width: 500px;
 `
+export const ClockHand = styled.div`
+  height: 0;
+  width: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: ${props => props.length}px solid ${props => props.hour ? 'cornflowerblue' : 'rgba(100,149,237,0.7)'};
+  ${''/* background-color: ${props => props.hour ? 'cornflowerblue' : 'palevioletred'} */}
+  position: relative;
+  left: 48%;
+  bottom: ${props => props.bottom}%;
+  transform:rotate(${props => props.deg}deg);
+`
+
+export const HalfCircle = styled.div `
+  background-color: cornflowerblue;
+  height: 80px;
+  width: 160px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  transform: rotate(${props => props.deg}deg);
+  position: relative;
+  top: ${props => props.top}em;
+  left: ${props => props.left}em;
+`

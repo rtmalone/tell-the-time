@@ -1,5 +1,7 @@
 .digits {
   list-style: none;
+  position: relative;
+  bottom: 10em;
 }
 
 .digits li {
