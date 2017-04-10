@@ -1,0 +1,30 @@
+.digits {
+  list-style: none;
+}
+
+.digits li {
+  font-size:1.6em;
+  display:block;
+  width:1.6em;
+  height:1.6em;
+  position:relative;
+  top:50%; left:50%;
+  line-height:1.6em;
+  text-align:center;
+  margin:-.8em 0 0 -.8em;
+  font-weight:bold;
+  color: palevioletred;
+}
+
+.digits li:nth-child(1) { transform:translate(3.8em, 1.7em) }
+.digits li:nth-child(2) { transform:translate(6.9em, 4em) }
+.digits li:nth-child(3) { transform:translate(8.2em, 7.48em) }
+.digits li:nth-child(4) { transform:translate(6.8em, 11em) }
+.digits li:nth-child(5) { transform:translate(3.7em, 13.5em) }
+.digits li:nth-child(6) { transform:translate(-0.7em, 14em) }
+.digits li:nth-child(7) { transform:translate(-4.9em, 11.9em) }
+.digits li:nth-child(8) { transform:translate(-8.3em, 7.8em) }
+.digits li:nth-child(9) { transform:translate(-9.7em, 2.7em) }
+.digits li:nth-child(10) { transform:translate(-8.2em, -2.3em) }
+.digits li:nth-child(11) { transform:translate(-5.3em, -6.3em) }
+.digits li:nth-child(12) { transform:translate(-0.7em, -8.5em) }
