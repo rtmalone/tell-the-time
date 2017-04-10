@@ -62,3 +62,12 @@ export const Bell = styled.div`
   top: ${props => props.top}em;
   left: ${props => props.left}em;
 `
+export const ClockFoot = styled.div`
+  background-color: ${mainColor};
+  border-radius: 50%;
+  position: relative;
+  bottom: ${props => props.bottom}em;
+  left: ${props => props.left}em;
+  height: 60px;
+  width: 60px;
+`
