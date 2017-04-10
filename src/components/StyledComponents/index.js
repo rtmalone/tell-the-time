@@ -1,35 +1,38 @@
 import styled from 'styled-components';
 
+const mainColor = 'cornflowerblue';
+const accentColor = 'palevioletred';
+
 export const Input = styled.input`
   size: 4em;
-  border: 4px solid palevioletred;
+  border: 4px solid ${accentColor};
   border-radius: 5px;
   height: ${props => props.height};
   width: ${props => props.width};
   font-size: 40px;
-  color: palevioletred;
+  color: ${accentColor};
   padding: 5px;
   text-align: center;
 `
 
 export const Button = styled.button`
-  background: ${props => props.selected ? 'white' : 'palevioletred'};
-  color: ${props => props.selected ? 'palevioletred' : 'white'};
+  background: ${props => props.selected ? 'white' : accentColor};
+  color: ${props => props.selected ? accentColor : 'white'};
   font-size: 2em;
   margin: 0em 1em;
   padding: 1em 2em;
-  border: 4px solid palevioletred;
+  border: 4px solid ${accentColor};
   border-radius: 3px;
   cursor: pointer;
 
 `
 export const H1 = styled.h1`
-  color: cornflowerblue;
+  color: ${mainColor};
   font-size: 2.5em;
 `
 
 export const Circle = styled.div`
-  border: 10px solid cornflowerblue;
+  border: 10px solid ${mainColor};
   border-radius: 50%;
   margin: auto;
   height: 500px;
@@ -40,16 +43,16 @@ export const ClockHand = styled.div`
   width: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-bottom: ${props => props.length}px solid ${props => props.hour ? 'cornflowerblue' : 'rgba(100,149,237,0.7)'};
-  ${''/* background-color: ${props => props.hour ? 'cornflowerblue' : 'palevioletred'} */}
+  border-bottom: ${props => props.hour ? '200px' : '250px'} solid ${props => props.hour ? mainColor : 'rgba(100,149,237,0.7)'};
   position: relative;
   left: 48%;
   bottom: ${props => props.bottom}%;
   transform:rotate(${props => props.deg}deg);
+  transform-origin: ${props => props.x}% ${props => props.y}%;
 `
 
-export const HalfCircle = styled.div `
-  background-color: cornflowerblue;
+export const Bell = styled.div`
+  background-color: ${mainColor};
   height: 80px;
   width: 160px;
   border-top-left-radius: 100px;
