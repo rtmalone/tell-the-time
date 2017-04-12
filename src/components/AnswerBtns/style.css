@@ -1,0 +1,10 @@
+.answers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.answers button{
+  display: block;
+  width: 10em;
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import {Circle, ClockHand, ClockFoot, Bell} from '../../components/StyledComponents';
+import AnswerBtns from '../../components/AnswerBtns';
 import './style.css';
 
 class Level1 extends React.Component {
