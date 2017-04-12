@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import  {BrowserRouter, Switch, Route} from 'react-router-dom';
 // import logo from './logo.svg';
 import './App.css';
+import '../static/simple-grid.min.css';
 // import Input from './components/NameInput';
 
 import Home from './containers/Home';
