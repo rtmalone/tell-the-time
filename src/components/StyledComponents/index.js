@@ -25,6 +25,10 @@ export const Button = styled.button`
   border-radius: 3px;
   cursor: pointer;
 
+  &:hover{
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+  }
 `
 export const H1 = styled.h1`
   color: ${mainColor};
