@@ -16,10 +16,10 @@ export const Input = styled.input`
 `
 
 export const Button = styled.button`
-  background: ${props => props.selected ? 'white' : accentColor};
-  color: ${props => props.selected ? accentColor : 'white'};
+  background: ${props => props.inverse ? 'white' : accentColor};
+  color: ${props => props.inverse ? accentColor : 'white'};
   font-size: 2em;
-  margin: 0em 1em;
+  margin: 1rem 1rem;
   padding: 1em 2em;
   border: 4px solid ${accentColor};
   border-radius: 3px;
@@ -34,7 +34,7 @@ export const H1 = styled.h1`
 export const Circle = styled.div`
   border: 10px solid ${mainColor};
   border-radius: 50%;
-  margin: auto;
+  margin: 2em auto;
   height: 500px;
   width: 500px;
 `
