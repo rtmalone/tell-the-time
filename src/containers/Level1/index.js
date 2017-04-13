@@ -5,18 +5,18 @@ import AnswerBtns from '../../components/AnswerBtns';
 import './style.css';
 
 const hours = [
-  {time: '1:00', deg: '30'},
-  {time: '2:00', deg: '60'},
-  {time: '3:00', deg: '90'},
-  {time: '4:00', deg: '120'},
-  {time: '5:00', deg: '150'},
-  {time: '6:00', deg: '180'},
-  {time: '7:00', deg: '210'},
-  {time: '8:00', deg: '240'},
-  {time: '9:00', deg: '270'},
-  {time: '10:00', deg: '300'},
-  {time: '11:00', deg: '330'},
-  {time: '12:00', deg: '0'}
+  {time: '1:00', deg: 30},
+  {time: '2:00', deg: 60},
+  {time: '3:00', deg: 90},
+  {time: '4:00', deg: 120},
+  {time: '5:00', deg: 150},
+  {time: '6:00', deg: 180},
+  {time: '7:00', deg: 210},
+  {time: '8:00', deg: 240},
+  {time: '9:00', deg: 270},
+  {time: '10:00', deg: 300},
+  {time: '11:00', deg: 330},
+  {time: '12:00', deg: 0}
 ];
 
 class Level1 extends React.Component {
