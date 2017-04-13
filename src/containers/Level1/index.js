@@ -40,7 +40,8 @@ class Level1 extends React.Component {
         {num: '12', translate:{ x:'0em' , y:'-8em'}},
       ],
       hours: null,
-      choices: null
+      choices: null,
+      isCorrect: false
     }
   }
 
@@ -75,14 +76,31 @@ class Level1 extends React.Component {
     return array;
   }
 
+  checkAnswer = (event) => {
+    console.log(event.target.value);
+    if (event.target.value === this.state.query.time) {
+      console.log('hooray');
+      this.setState({
+        isCorrect: true
+      });
+      setTimeout(function(){window.location.reload();}, 2000);
+    } else {
+      console.log('boo');
+    }
+  }
+
   render() {
+    const {choices, query, isCorrect} = this.state
     return (
       <div className='row'>
         <div className='col-7'>
           <Clock {...this.state} />
         </div>
         <div className='col-5'>
-          <AnswerBtns choices={this.state.choices} />
+          <AnswerBtns checkAnswer={this.checkAnswer} choices={choices} query={query} />
+          { isCorrect &&
+            <p>Yay, {this.props.location.state.player}!</p>
+          }
         </div>
       </div>
     )

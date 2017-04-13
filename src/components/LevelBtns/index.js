@@ -13,7 +13,7 @@ class LevelBtns extends React.Component {
         </div>
         <Link to={{
           pathname: '/level1',
-          player: this.props.player,
+          state: { player: this.props.player }
         }}><Button>1</Button></Link>
         <Button>2</Button>
         <Button>3</Button>
